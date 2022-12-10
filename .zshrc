@@ -99,3 +99,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias composer="docker run --rm --interactive --tty --volume ${PWD}:/app --user $(id -u):$(id -g) composer"
