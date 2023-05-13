@@ -103,4 +103,4 @@ alias composer="docker run --rm --interactive --tty --user $(id -u):$(id -g) --v
 
 # Define alias command using environment variables
 alias a=$ALIAS_ARTISAN
-alias a=$DOCKER_BUILD
+alias build=$DOCKER_BUILD
