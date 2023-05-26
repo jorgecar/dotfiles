@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias composer="docker run --rm --interactive --tty --user $(id -u):$(id -g) --volume ${PWD}:/app --volume ${COMPOSER_HOME}:$COMPOSER_HOME --volume ${COMPOSER_CACHE_DIR}:$COMPOSER_CACHE_DIR composer"
-alias php='docker run --rm --interactive --tty --volume /workspaces/larsk:/app php:8.1-cli-alpine'
+alias php='docker run --rm --interactive --tty --volume ${PWD}:/app php:8.1-cli-alpine'
 
 # Define alias command using environment variables
 alias a=$ALIAS_ARTISAN
